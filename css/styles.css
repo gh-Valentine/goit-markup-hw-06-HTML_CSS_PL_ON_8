@@ -735,7 +735,7 @@ img {
 }
 
 .close-btn {
-  position: relative;
+  position: absolute;
   width: 30px;
   height: 30px;
   right: 8px;
@@ -783,8 +783,7 @@ img {
 }
 
 .modal-form-block {
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -796,11 +795,10 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 12px;
 }
 
 .modal-form-block-label {
-  padding-bottom: 4px;
+  margin-top: 10px;
   color: var(--third-color);
   font-size: 12px;
   line-height: 1.167;
@@ -842,13 +840,17 @@ img {
 }
 
 .modal-form-block-label textarea {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   padding-left: 16px;
   padding-top: 12px;
   resize: none;
   height: 120px;
   width: 448px;
   margin-top: 4px;
-  margin-bottom: 20px;
+
   border-radius: 4px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -856,11 +858,18 @@ img {
 
 .modal-form-block-policy {
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .modal-form-block-policy-label {
   cursor: pointer;
   display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.714px;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
 }
 
 .modal-form-block-policy-label input {
@@ -872,8 +881,8 @@ img {
 }
 
 .modal-form-block-policy-checkmark {
-  height: 16px;
-  width: 15px;
+  height: 15px;
+  width: 16px;
   border: 1px solid var(--main-color);
   border-radius: 2px;
   background-color: var(--fourth-color);
